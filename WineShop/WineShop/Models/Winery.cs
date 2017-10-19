@@ -11,7 +11,7 @@ namespace WineShop.Models
         public string Name { get; set; }
         public Country Country { get; set; }
 
-        // Add relatioship - One to many
+        // Add relatioship - One (Winery) to many (Wine)
         public virtual ICollection<Wine> Wines { get; set; }
     }
 
