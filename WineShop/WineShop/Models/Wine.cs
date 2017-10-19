@@ -14,6 +14,13 @@ namespace WineShop.Models
         public double AlcholPercentage { get; set; }
         public string ImagePath { get; set; }
         public string Description { get; set; }
+        public WineType WineType { get; set; }
 
+    }
+
+    public enum WineType
+    {
+        Sauvignon, Rieslinger, Syrah,
+        Merlot, Cabernet, Other
     }
 }
