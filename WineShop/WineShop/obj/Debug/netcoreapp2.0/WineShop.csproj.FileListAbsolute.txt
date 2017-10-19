@@ -1,0 +1,11 @@
+F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\bin\Debug\netcoreapp2.0\WineShop.deps.json
+F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\bin\Debug\netcoreapp2.0\WineShop.runtimeconfig.json
+F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\bin\Debug\netcoreapp2.0\WineShop.runtimeconfig.dev.json
+F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\bin\Debug\netcoreapp2.0\WineShop.dll
+F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\bin\Debug\netcoreapp2.0\WineShop.pdb
+F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\obj\Debug\netcoreapp2.0\WineShop.csprojResolveAssemblyReference.cache
+F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\obj\Debug\netcoreapp2.0\WineShop.csproj.CoreCompileInputs.cache
+F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\obj\Debug\netcoreapp2.0\WineShop.AssemblyInfoInputs.cache
+F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\obj\Debug\netcoreapp2.0\WineShop.AssemblyInfo.cs
+F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\obj\Debug\netcoreapp2.0\WineShop.dll
+F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\obj\Debug\netcoreapp2.0\WineShop.pdb
