@@ -16,6 +16,12 @@ namespace WineShop.Models
         public string Description { get; set; }
         public WineType WineType { get; set; }
 
+        // Creating a relationship - Many to one
+        public int WineryID { get; set; }
+        public virtual Winery Winery { get; set; }
+
+
+
     }
 
     public enum WineType
