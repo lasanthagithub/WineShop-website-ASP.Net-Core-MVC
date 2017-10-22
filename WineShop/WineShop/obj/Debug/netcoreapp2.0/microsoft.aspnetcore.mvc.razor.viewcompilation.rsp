@@ -1,0 +1,12 @@
+F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop
+--output-path=obj\Debug\netcoreapp2.0\
+--application-name=WineShop
+--content-root=F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop
+--file=F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\Views\Home\About.cshtml
+--file=F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\Views\Home\Contact.cshtml
+--file=F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\Views\Home\Index.cshtml
+--file=F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\Views\Shared\Error.cshtml
+--file=F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\Views\Shared\_Layout.cshtml
+--file=F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\Views\_ViewImports.cshtml
+--file=F:\One_drive_Gmail\OneDrive\My_Projets_Git\dot_net_projects\WineSale\WineShop\WineShop\Views\_ViewStart.cshtml

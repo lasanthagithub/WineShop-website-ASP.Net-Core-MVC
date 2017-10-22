@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "a7aa306d2e264d92ffef06296341a5e29b6e41eb"
+    "signature": "09d30a72547637a2e902fe446c566c409653fdbb"
   },
   "compilationOptions": {
     "defines": [
@@ -23,14 +23,26 @@
     ".NETCoreApp,Version=v2.0": {
       "WineShop/1.0.0": {
         "dependencies": {
+          "EntityFramework": "6.2.0-beta1",
           "Microsoft.AspNetCore.All": "2.0.0",
-          "Microsoft.NETCore.App": "2.0.0"
+          "Microsoft.NETCore.App": "2.0.0",
+          "System.Data.Entity.Repository": "2.0.0.1"
         },
         "runtime": {
           "WineShop.dll": {}
         },
         "compile": {
           "WineShop.dll": {}
+        }
+      },
+      "EntityFramework/6.2.0-beta1": {
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -2743,6 +2755,17 @@
           "System.Text.Encoding": "4.3.0"
         }
       },
+      "System.Data.Entity.Repository/2.0.0.1": {
+        "dependencies": {
+          "EntityFramework": "6.2.0-beta1"
+        },
+        "runtime": {
+          "lib/net45/System.Data.Entity.Repository.dll": {}
+        },
+        "compile": {
+          "lib/net45/System.Data.Entity.Repository.dll": {}
+        }
+      },
       "System.Data.SqlClient/4.4.0": {
         "dependencies": {
           "Microsoft.Win32.Registry": "4.4.0",
@@ -3977,6 +4000,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "EntityFramework/6.2.0-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dzH46zRbtj273BrrRj8FGowxJbI4+u5g5fzAUYx83naa3CSN5mqFqnzZN6SjM8tnPIpUuVx2XHMIcOCEyzTejA==",
+      "path": "entityframework/6.2.0-beta1",
+      "hashPath": "entityframework.6.2.0-beta1.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
@@ -5412,6 +5442,13 @@
       "sha512": "sha512-DHDrIxiqk1h03m6khKWV2X8p/uvN79rgSqpilL6uzpmSfxfU5ng8VcPtW4qsDsQDHiTv6IPV9TmD5M/vElPNLg==",
       "path": "system.console/4.3.0",
       "hashPath": "system.console.4.3.0.nupkg.sha512"
+    },
+    "System.Data.Entity.Repository/2.0.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MnYUvHPcOAUGIyOzKR4A6Kd918VkCjKpfFCQoNdjY6LO4y1QwrwWZtdmOs2B3wozTYfJgPWKpIeW3ZHn+ylgrA==",
+      "path": "system.data.entity.repository/2.0.0.1",
+      "hashPath": "system.data.entity.repository.2.0.0.1.nupkg.sha512"
     },
     "System.Data.SqlClient/4.4.0": {
       "type": "package",

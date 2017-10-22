@@ -2,12 +2,14 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "EntityFramework/5.0.0": {
+      "EntityFramework/6.2.0-beta1": {
         "type": "package",
         "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
           "lib/net45/EntityFramework.dll": {}
         },
         "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
           "lib/net45/EntityFramework.dll": {}
         }
       },
@@ -4771,26 +4773,27 @@
     }
   },
   "libraries": {
-    "EntityFramework/5.0.0": {
-      "sha512": "WYfgJWKg/RjwU8pzZkImD9DsV+J1nqDcIGp1S0/bdnElKBmAaUC2nmq/QQAcco32KyQQWnLgJNiDzIOz2xWFbQ==",
+    "EntityFramework/6.2.0-beta1": {
+      "sha512": "dzH46zRbtj273BrrRj8FGowxJbI4+u5g5fzAUYx83naa3CSN5mqFqnzZN6SjM8tnPIpUuVx2XHMIcOCEyzTejA==",
       "type": "package",
-      "path": "entityframework/5.0.0",
+      "path": "entityframework/6.2.0-beta1",
       "files": [
-        "Content/App.config.transform",
-        "Content/Web.config.transform",
-        "entityframework.5.0.0.nupkg.sha512",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.transform",
+        "entityframework.6.2.0-beta1.nupkg.sha512",
         "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
         "lib/net40/EntityFramework.dll",
         "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
         "lib/net45/EntityFramework.dll",
         "lib/net45/EntityFramework.xml",
-        "tools/EntityFramework.PS3.psd1",
         "tools/EntityFramework.PowerShell.Utility.dll",
         "tools/EntityFramework.PowerShell.dll",
         "tools/EntityFramework.psd1",
         "tools/EntityFramework.psm1",
-        "tools/Redirect.VS11.config",
-        "tools/Redirect.config",
         "tools/about_EntityFramework.help.txt",
         "tools/init.ps1",
         "tools/install.ps1",
@@ -12585,6 +12588,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "EntityFramework >= 6.2.0-beta1",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "System.Data.Entity.Repository >= 2.0.0.1"
@@ -12596,9 +12600,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "F:\\One_drive_Gmail\\OneDrive\\My_Projets_Git\\dot_net_projects\\WineSale\\WineShop\\WineShop\\WineShop.csproj",
       "projectName": "WineShop",
@@ -12634,18 +12635,22 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "System.Data.Entity.Repository": {
-            "target": "Package",
-            "version": "2.0.0.1"
-          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
           },
+          "EntityFramework": {
+            "target": "Package",
+            "version": "6.2.0-beta1"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "2.0.0"
+          },
+          "System.Data.Entity.Repository": {
+            "target": "Package",
+            "version": "2.0.0.1"
           }
         },
         "imports": [
@@ -12661,7 +12666,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'EntityFramework 5.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'EntityFramework 6.2.0-beta1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "EntityFramework",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
