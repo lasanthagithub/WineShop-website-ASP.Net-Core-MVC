@@ -12600,6 +12600,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "F:\\One_drive_Gmail\\OneDrive\\My_Projets_Git\\dot_net_projects\\WineSale\\WineShop\\WineShop\\WineShop.csproj",
       "projectName": "WineShop",
@@ -12635,22 +12638,22 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "System.Data.Entity.Repository": {
+            "target": "Package",
+            "version": "2.0.0.1"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
           },
-          "EntityFramework": {
-            "target": "Package",
-            "version": "6.2.0-beta1"
-          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "2.0.0"
           },
-          "System.Data.Entity.Repository": {
+          "EntityFramework": {
             "target": "Package",
-            "version": "2.0.0.1"
+            "version": "6.2.0-beta1"
           }
         },
         "imports": [
