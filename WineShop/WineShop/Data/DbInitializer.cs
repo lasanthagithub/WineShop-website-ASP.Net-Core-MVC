@@ -20,14 +20,14 @@ namespace WineShop.Data
             }
 
             // Creating some data
-            var wine = new Wine[]
+            var wines = new Wine[]
             {
-                new Wine{Name = "JundaWine", Price = 19.99, YearOfBotteling = 1995, AlcholPercentage = 10, WineryID = 2},
-                new Wine{Name = "JundaNoWine", Price = 19.99, YearOfBotteling = 1990, AlcholPercentage = 10, WineryID = 1}
+                new Wine{ID=5, Name = "JundaWine", Price = 19.99, YearOfBotteling = 1995, AlcholPercentage = 10, WineryID = 2},
+                new Wine{ID=6, Name = "JundaNoWine", Price = 19.99, YearOfBotteling = 1990, AlcholPercentage = 10, WineryID = 1}
             };
 
             // Add new data to DB just for checking
-            foreach (Wine w in wine)
+            foreach (Wine w in wines)
             {
                 context.Wine.Add(w);
             }
@@ -35,10 +35,10 @@ namespace WineShop.Data
 
 
             // Look for data in Winery database
-            if (context.Winery.Any())
-            {
-                return; // DB has been seeded
-            }
+            //if (context.Winery.Any())
+            //{
+            //    return; // DB has been seeded
+            //}
         }
     }
 }
