@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 //using MySQL.Data.EntityFrameworkCore.Extensions;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using WineShop.Models;
 
-
-namespace WineShop.Models
+namespace WineShop.Data
 {
 
     public class ApplicationDbContext : DbContext
