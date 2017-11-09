@@ -24,8 +24,13 @@ namespace WineShop
         public void ConfigureServices(IServiceCollection services)
         {
             //**** To register ApplicationDbContext as a service following two lines are added
+
+            // For SQLServer
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DatabaseConnectionString")));
+
+            // For MySQL
+
             services.AddMvc();
         }
 
