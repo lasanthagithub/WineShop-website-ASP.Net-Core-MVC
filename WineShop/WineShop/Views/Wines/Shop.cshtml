@@ -1,0 +1,83 @@
+﻿@model IEnumerable<WineShop.Models.Wine>
+
+@{
+    ViewData["Title"] = "Shop for Wines";
+}
+
+<h2>Index</h2>
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YearOfBotteling)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AlcholPercentage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImagePath)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WineType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Winery)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.YearOfBotteling)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AlcholPercentage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImagePath)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WineType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Winery.Name)
+                </td>
+                <td>
+                    <a asp-action="AddToCart" asp-route-id="@item.ID">Add to Cart</a> |
+                    <a asp-action="#" asp-route-id="@item.ID">View Cart</a> |
+                    <a asp-action="#" asp-route-id="@item.ID">Remove</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+<p>
+    <a asp-action="#">Buy now</a>
+</p>

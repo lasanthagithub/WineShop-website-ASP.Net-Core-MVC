@@ -26,6 +26,15 @@ namespace WineShop.Controllers
             return View(await applicationDbContext.ToListAsync());
         }
 
+        
+        public async Task<IActionResult> Shop()
+        {
+            var applicationDbContext = _context.Wine.Include(w => w.Winery);
+            return View(await applicationDbContext.ToListAsync());
+
+        }
+
+
         // GET: Wines/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -164,5 +173,8 @@ namespace WineShop.Controllers
         {
             return _context.Wine.Any(e => e.ID == id);
         }
+
+
+
     }
 }
