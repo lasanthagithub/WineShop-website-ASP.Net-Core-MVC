@@ -48,7 +48,10 @@ namespace WineShop.Controllers
         // GET: Wines/Create
         public IActionResult Create()
         {
-            ViewData["WineryID"] = new SelectList(_context.Winery, "Id", "Name");
+            //ViewData["WineryID"] = new SelectList(_context.Winery, "Id", "Name");
+            ViewBag.Items = new SelectList(_context.Winery, "Id", "Name");
+
+
             return View();
         }
 
@@ -65,7 +68,8 @@ namespace WineShop.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["WineryID"] = new SelectList(_context.Winery, "Id", "Name", wine.WineryID);
+            //ViewData["WineryID"] = new SelectList(_context.Winery, "Id", "Name", wine.WineryID);
+            ViewBag.Items = new SelectList(_context.Winery, "Id", "Name", wine.WineryID);
             return View(wine);
         }
 
@@ -82,7 +86,9 @@ namespace WineShop.Controllers
             {
                 return NotFound();
             }
-            ViewData["WineryID"] = new SelectList(_context.Winery, "Id", "Name", wine.WineryID);
+            //ViewData["WineryID"] = new SelectList(_context.Winery, "Id", "Name", wine.WineryID);
+
+            ViewBag.Items = new SelectList(_context.Winery, "Id", "Name", wine.WineryID);
             return View(wine);
         }
 
@@ -118,7 +124,9 @@ namespace WineShop.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["WineryID"] = new SelectList(_context.Winery, "Id", "Name", wine.WineryID);
+            //ViewData["WineryID"] = new SelectList(_context.Winery, "Id", "Name", wine.WineryID);
+            ViewBag.Items = new SelectList(_context.Winery, "Id", "Name", wine.WineryID);
+
             return View(wine);
         }
 
