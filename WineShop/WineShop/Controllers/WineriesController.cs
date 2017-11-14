@@ -96,11 +96,45 @@ namespace WineShop.Controllers
         }
 
 
-        // Delete
+        // Delete - Get the value from DB and dispaly to edit
 
-        public IActionResult Delete()
+        public IActionResult Delete(int? id)
         {
-            return View();
+            // Check whether id contain a value or not
+            if (id == null)
+            {
+                Response.StatusCode = 400;
+                return Content("No item found");
+            }
+
+            // Get a winery info ffrom the passesd id
+            Winery winery = _context.Winery.Single(model => model.Id == id);
+
+
+            // check the passed id has a record
+            if (winery == null)
+            {
+                Response.StatusCode = 400;
+                return Content("No item found");
+            }
+
+            // if the passed id has a record in winery return it
+            return View(winery);
+        }
+
+        // Delete - Once the edition is submitted. DB is updated.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(int id)
+        {
+
+            // Get a winery info ffrom the passesd id
+            Winery winery = _context.Winery.Single(model => model.Id == id);
+            _context.Winery.Remove(winery);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
+
         }
     }
 }
