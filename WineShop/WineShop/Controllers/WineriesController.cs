@@ -16,7 +16,7 @@ namespace WineShop.Controllers
         // Deal with databases
         private ApplicationDbContext _context;
 
-        public WineriesController(ApplicationDbContext context)
+        public WineriesController(ApplicationDbContext context) // constructor
         {
             _context = context;
         }
@@ -24,7 +24,8 @@ namespace WineShop.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View();
+            List<Winery> wineries = _context.Winery.ToList();
+            return View(wineries);
         }
 
         // Create get method
@@ -38,7 +39,14 @@ namespace WineShop.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Winery winery)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                _context.Winery.Add(winery);
+                _context.SaveChanges(); // add data to the database
+
+                return RedirectToAction("Index");
+            }
+            return View(winery);
         }
     }
 }

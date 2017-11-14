@@ -8,8 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WineShop.Data;
 using Microsoft.EntityFrameworkCore;
-using MySQL.Data.EntityFrameworkCore;
-using MySQL.Data.EntityFrameworkCore.Extensions;
+//using MySQL.Data.EntityFrameworkCore;
+//using MySQL.Data.EntityFrameworkCore.Extensions;
 
 namespace WineShop
 {
@@ -31,10 +31,13 @@ namespace WineShop
             //////services.AddDbContext<ApplicationDbContext>(options =>
             //////options.UseSqlServer(Configuration.GetConnectionString("DatabaseConnectionString")));
 
-            // For MySQL
-            services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseMySQL(Configuration.GetConnectionString("DatabaseConnectionString")));
+            // For MySQL Data Entity Frame work 
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //options.UseMySQL(Configuration.GetConnectionString("DatabaseConnectionString")));
 
+            // For MySQL Pomelo Entity Frame work 
+            services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseMySql(Configuration.GetConnectionString("DatabaseConnectionString"))); // Note: UseMySQL vs UseMySql
 
             services.AddMvc();
         }
