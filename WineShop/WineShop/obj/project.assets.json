@@ -13300,6 +13300,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "F:\\One_drive_Gmail\\OneDrive\\My_Projets_Git\\dot_net_projects\\WineSale\\WineShop\\WineShop\\WineShop.csproj",
       "projectName": "WineShop",
@@ -13335,26 +13338,26 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
+          "System.Data.Entity.Repository": {
             "target": "Package",
-            "version": "2.0.0",
-            "autoReferenced": true
-          },
-          "EntityFramework": {
-            "target": "Package",
-            "version": "6.2.0-beta1"
-          },
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "2.0.0"
+            "version": "2.0.0.1"
           },
           "MySql.Data.EntityFrameworkCore": {
             "target": "Package",
             "version": "8.0.9-dmr"
           },
-          "System.Data.Entity.Repository": {
+          "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0.0.1"
+            "version": "2.0.0",
+            "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "EntityFramework": {
+            "target": "Package",
+            "version": "6.2.0-beta1"
           }
         },
         "imports": [
