@@ -1,0 +1,69 @@
+﻿@model WineShop.Models.Wine
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Wine</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearOfBotteling" class="control-label"></label>
+                <input asp-for="YearOfBotteling" class="form-control" />
+                <span asp-validation-for="YearOfBotteling" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AlcholPercentage" class="control-label"></label>
+                <input asp-for="AlcholPercentage" class="form-control" />
+                <span asp-validation-for="AlcholPercentage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImagePath" class="control-label"></label>
+                <input asp-for="ImagePath" class="form-control" />
+                <span asp-validation-for="ImagePath" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WineType" class="control-label"></label>
+                <select asp-for="WineType" class="form-control"></select>
+                <span asp-validation-for="WineType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WineryID" class="control-label"></label>
+                <select asp-for="WineryID" class="form-control" asp-items="ViewBag.WineryID"></select>
+                <span asp-validation-for="WineryID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
