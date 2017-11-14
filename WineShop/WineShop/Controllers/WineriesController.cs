@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WineShop.Models;
+using WineShop.Data;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,7 +14,12 @@ namespace WineShop.Controllers
     {
 
         // Deal with databases
+        private ApplicationDbContext _context;
 
+        public WineriesController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
 
         // GET: /<controller>/
         public IActionResult Index()
