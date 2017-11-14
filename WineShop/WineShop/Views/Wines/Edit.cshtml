@@ -45,12 +45,13 @@
             </div>
             <div class="form-group">
                 <label asp-for="WineType" class="control-label"></label>
-                <select asp-for="WineType" class="form-control"></select>
+                <select asp-for="WineType" class="form-control" asp-items="Html.GetEnumSelectList<WineType>()"></select>
                 <span asp-validation-for="WineType" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="WineryID" class="control-label"></label>
-                <select asp-for="WineryID" class="form-control" asp-items="ViewBag.WineryID"></select>
+                @*<select asp-for="WineryID" class="form-control" asp-items="ViewBag.WineryID"></select>*@
+                <select asp-for="WineryID" class="form-control" asp-items="@ViewBag.Items"></select>
                 <span asp-validation-for="WineryID" class="text-danger"></span>
             </div>
             <div class="form-group">
